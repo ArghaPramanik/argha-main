@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ html, body {
     width: 100%;
 }
 
-#data-container{
+#data-container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -17,8 +17,7 @@ html, body {
     margin-left: 125px;
 }
 
-  
-  .heading {
+.heading {
     font-size: 2em;
     text-align: center;
     margin: 2rem 0;
@@ -30,18 +29,33 @@ html, body {
     text-decoration: underline lightskyblue; 
 }
 
-
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.img-container{
+.img-container {
     border-radius: 10px;
 }
 
-.img-container:hover{
+.img-container:hover {
     background-color: rgb(9, 161, 98);
     color: white;
+}
+
+@media (max-width: 768px) {
+    #data-container {
+        flex-direction: column; 
+        margin-left: 0; 
+    }
+
+    .heading {
+        font-size: 1.5em; 
+        margin: 1rem 0; 
+    }
+
+    .img-container {
+        width: 100%;
+    }
 }
